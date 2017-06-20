@@ -1,0 +1,159 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  background-color: #202120;
+}
+
+p {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 15pt;
+  color: white;
+}
+
+h4 {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 21pt;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar, .rave {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 17pt;
+  color: white;
+}
+
+.nav-bar li a:hover {
+  color: #1397B8;
+  cursor: pointer;
+}
+
+/*Navigation*/
+.nav-bar li{
+  text-decoration: none;
+  display: inline;
+  margin: 80px;
+  border-bottom: 3px solid white;
+  border-radius: 1px;
+  padding-bottom: 3px;
+}
+
+.nav-bar ul{
+  position: fixed;
+  bottom: 30px;
+  left: 10%;
+  right: 10%;
+  display: block;
+  z-index: 1000;
+}
+
+
+
+/*HERO*/
+
+.hero {
+  background: #202120 url('../images/action.jpg') no-repeat ;
+  background-size: cover;
+  height: 100%;
+}
+
+.hero p {
+  display: inline;
+  margin: 15px;
+}
+
+.hero img {
+  margin: auto;
+  display: block;
+  top: 180px;
+  position: relative;
+}
+
+.rave li {
+  text-decoration: none;
+  display: inline;
+  margin: 50px;
+  padding-bottom: 3px;
+}
+
+.rave ul {
+  bottom: 50px;
+  left: 50%;
+  right: 50%;
+  display: block;
+}
+
+/*SYNOPSIS*/
+.synopsis {
+clear: both;
+overflow: auto;
+}
+
+.text h4{
+}
+
+.text p, .text h4{
+  float: left;
+  width: 25%;
+}
+
+.synopsis img {
+  margin: 20px;
+}
+
+.blue-box {
+  height: 300px;
+  width: 90%;
+  background-color: #1397B8;
+  mix-blend-mode: overlay;
+  position: absolute;
+  right: 0px;
+  top:1087px;
+}
+
+
+/*Trailer*/
+.trailer {
+  background: #202120 url('../images/woman-concert.jpeg') no-repeat ;
+  background-size: cover;
+  height: 100%;
+}
+
+.trailer img {
+  margin: auto;
+  display: block;
+  padding-top: 300px;
+}
+
+
+/*CAST*/
+.actor {
+  display: inline-block;
+  margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
