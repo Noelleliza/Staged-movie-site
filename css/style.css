@@ -8,14 +8,20 @@ body {
 }
 
 p {
-  font-family: 'Futura', 'Avenir Next', sans-serif;
-  font-size: 15pt;
+  font-family: 'Futura PT', 'Avenir Next', sans-serif;
+  font-size: 14pt;
   color: white;
 }
 
 h4 {
   font-family: 'Futura', 'Avenir Next', sans-serif;
-  font-size: 21pt;
+  font-size: 20pt;
+  color: white;
+}
+
+h5 {
+  font-family: 'Futura', 'Avenir Next', sans-serif;
+  font-size: 12pt;
   color: white;
 }
 
@@ -26,13 +32,15 @@ a {
 
 .nav-bar, .rave {
   font-family: 'Futura', 'Avenir Next', sans-serif;
-  font-size: 17pt;
+  font-size: 16pt;
   color: white;
 }
 
-.nav-bar li a:hover {
+.nav-bar li a:hover, .nav-bar li:hover {
   color: #1397B8;
   cursor: pointer;
+  border-bottom:  solid #1397B8;
+
 }
 
 /*Navigation*/
@@ -47,11 +55,11 @@ a {
 
 .nav-bar ul{
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   left: 10%;
   right: 10%;
   display: block;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 
@@ -92,8 +100,14 @@ a {
 
 /*SYNOPSIS*/
 .synopsis {
-clear: both;
-overflow: auto;
+  clear: both;
+  overflow: auto;
+}
+
+.synopsis.text {
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 /*.text h4{
@@ -109,15 +123,18 @@ overflow: auto;
 }
 
 .blue-box {
-  height: 300px;
   width: 90%;
   background-color: #1397B8;
   mix-blend-mode: overlay;
   position: absolute;
   right: 0px;
-  top:1087px;
 }
 
+#blu1 {
+  height: 300px;
+  top:765px;
+
+}
 
 /*Trailer*/
 .trailer {
@@ -134,14 +151,115 @@ overflow: auto;
 
 
 /*CAST*/
+.cast {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  clear: both;
+  margin: 55px 0;
+}
+
+h4.cast {
+  float: left;
+  text-align: left;
+}
+
 .actor {
   display: inline-block;
-  margin: 15px;
+  margin: 30px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.top-row, .bottom-row {
+  text-align: center;
+  position: relative;
+  margin:auto;
+ }
+
+p.role{
+  font-size: 12pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.cast .blue-box{
+  height: 160px;
+  margin: auto;
+  margin-bottom: 
+  top: 255px;
+  left: 0;
+  z-index: 1000;
+}
+
+#blu3 {
+  top: 255px;
+}
+
+#blu2{
+  top: 625px;
+}
+
+/*REVIEWS*/
+.column-1{
+  float: left;
+  width: 18%; 
+  margin: 5px 20px;
+  margin-left: 60px;
+}
+
+.column-2{
+  float: left;
+  width: 18%;
+  margin: 5px 20px;
+}
+
+.column-3{
+  float: right;
+  width: 40%;
+  margin: 5px 20px;
+  margin-right: 60px;
+}
+
+span {
+  font-size: 20pt;
+  color: #1397B8;
+}
+
+.reviews {
+  background: #202120 url('../images/empty.png') no-repeat ;
+  height: 100%;
+  display: inline-block;
+  padding: 10% 5px;
 }
 
 
+/*FOOTER*/
+.footer{
+width: 90%;
+}
 
+.search-bar, .button{
+  border: 3px solid #1397B8;
+  border-radius: 25px;
+  padding: 5px 20px;
+  width: 20%;
+  color: #1397B8;
+  font-family: 'Futura';
+  margin: auto;
+  display: inline;
+  bottom: 25px;
+}
 
+.button{
+  background: #1397B8;
+  border: 3px solid #1397B8;
+  color: #202120;
+  width: 10%;
+  text-align: center;
+}
 
 
 
