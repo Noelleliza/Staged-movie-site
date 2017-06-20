@@ -96,8 +96,8 @@ clear: both;
 overflow: auto;
 }
 
-.text h4{
-}
+/*.text h4{
+}*/
 
 .text p, .text h4{
   float: left;
