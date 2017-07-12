@@ -37,10 +37,15 @@ a {
   text-align: center;
 }
 
-.nav-bar li a:hover, .nav-bar li:hover {
+.nav-bar li a:hover {
   color: #1397B8;
   cursor: pointer;
   border-bottom:  solid #1397B8;
+  padding: 5px 0;
+}
+
+.nav-bar li:hover{
+  border: none;
 }
 
 ul.rave {
@@ -80,7 +85,15 @@ ul.rave {
   background: #202120 url('../images/action.jpg') no-repeat fixed;
   background-size: cover;
   height: 100%;
+  z-index: -1;
 }
+
+/*@media all {
+  .hero {
+    background: #202120 url('../images/action.jpg') no-repeat;
+    background-size: contain;
+  }
+}*/
 
 .hero p {
   display: inline;
