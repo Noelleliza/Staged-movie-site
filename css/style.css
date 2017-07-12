@@ -34,20 +34,25 @@ a {
   font-family: 'Futura', 'Avenir Next', sans-serif;
   font-size: 16pt;
   color: white;
+  text-align: center;
 }
 
 .nav-bar li a:hover, .nav-bar li:hover {
   color: #1397B8;
   cursor: pointer;
   border-bottom:  solid #1397B8;
-
 }
+
+ul.rave {
+  padding-left: 0;
+}
+
 
 /*Navigation*/
 .nav-bar li{
   text-decoration: none;
-  display: inline;
-  margin: 80px;
+  display: inline-block;
+  margin: 0 7%;
   border-bottom: 3px solid white;
   border-radius: 1px;
   padding-bottom: 3px;
@@ -56,18 +61,23 @@ a {
 .nav-bar ul{
   position: fixed;
   bottom: 20px;
-  left: 10%;
-  right: 10%;
+  width: 100%;
   display: block;
-  z-index: 2000;
+  z-index: 3000;
+  margin: auto;
+  padding-left: 0;
 }
 
-
+@media (max-width:631px){
+  .nav-bar li{
+    margin:1%;
+  }
+}
 
 /*HERO*/
 
 .hero {
-  background: #202120 url('../images/action.jpg') no-repeat ;
+  background: #202120 url('../images/action.jpg') no-repeat fixed;
   background-size: cover;
   height: 100%;
 }
@@ -80,14 +90,15 @@ a {
 .hero img {
   margin: auto;
   display: block;
-  top: 180px;
+  top: 20%/*180px*/;
   position: relative;
+  width: 80%;
 }
 
 .rave li {
   text-decoration: none;
-  display: inline;
-  margin: 50px;
+  display: inline-block;
+  margin: 10px 20px;
   padding-bottom: 3px;
 }
 
@@ -102,6 +113,7 @@ a {
 .synopsis {
   clear: both;
   overflow: auto;
+  position: relative;
 }
 
 .synopsis.text {
@@ -110,16 +122,25 @@ a {
   top: 0;
 }
 
-/*.text h4{
-}*/
+.text{
+   width: 25%;
+   display: inline-block;
+   position: relative;
+}
 
-.text p, .text h4{
-  float: left;
-  width: 25%;
+.synopsis h4{
+  text-align: left;
+  margin-bottom: 30%;
+  margin-top: 20%;
+  border-bottom: #1397B8 1.5px solid;
+  width: 160%;
 }
 
 .synopsis img {
-  margin: 20px;
+  margin: 5%;
+  width: 50%;
+  float: left;
+/*  z-index: 2000;*/
 }
 
 .blue-box {
@@ -130,23 +151,34 @@ a {
   right: 0px;
 }
 
-#blu1 {
-  height: 300px;
-  top:765px;
+.blue-box {
+  z-index: 2000;
+}
 
+#blu1 {
+  height: 50%;
+  top:23%;
+  position: absolute;
+}
+
+@media (max-width:947px){
+  .synopsis p{
+    width: 133%;
+  }
 }
 
 /*Trailer*/
 .trailer {
   background: #202120 url('../images/woman-concert.jpeg') no-repeat ;
   background-size: cover;
-  height: 100%;
+  /*height: 85%;*/
 }
 
 .trailer img {
   margin: auto;
   display: block;
-  padding-top: 300px;
+  padding-top: 23%;
+  padding-bottom: 23%;
 }
 
 
@@ -160,9 +192,11 @@ a {
   margin: 55px 0;
 }
 
-h4.cast {
-  float: left;
-  text-align: left;
+.cast h4{
+  border-bottom: #1397B8 1.5px solid;
+  padding-bottom: 6px;
+  width: 20%;
+  text-align: right;
 }
 
 .actor {
@@ -188,38 +222,58 @@ p.role{
 .cast .blue-box{
   height: 160px;
   margin: auto;
-  margin-bottom: 
   top: 255px;
   left: 0;
   z-index: 1000;
 }
 
+.cast .blac-box{
+  background-color: #202120;
+  height: 170px;
+  margin: auto;
+  left: 0;
+}
+
 #blu3 {
   top: 255px;
 }
-
 #blu2{
   top: 625px;
 }
-
-/*REVIEWS*/
-.column-1{
-  float: left;
-  width: 18%; 
-  margin: 5px 20px;
-  margin-left: 60px;
+#blu4{
+  top:1000px;
+}
+#blu5{
+  top: 1370px;
+}
+#blu6{
+  top: 1740px;
+}
+#blu7{
+  top: 2115px;
+}
+#blu8{
+  top: 2480px;
 }
 
-.column-2{
+/*REVIEWS*/
+.contain-reviews{
+  margin: auto;
+  display: inline-block;
+  width: 85%;
+  text-align: left;
+}
+
+.column-1, .column-2{
   float: left;
-  width: 18%;
-  margin: 5px 20px;
+  width: 20%;
+  margin: 5px 4%;
 }
 
 .column-3{
-  float: right;
-  width: 40%;
-  margin: 5px 20px;
+  float: left;
+  width: 33%;
+  margin: 5px 30px;
   margin-right: 60px;
 }
 
@@ -228,17 +282,44 @@ span {
   color: #1397B8;
 }
 
-.reviews {
-  background: #202120 url('../images/empty.png') no-repeat ;
-  height: 100%;
-  display: inline-block;
-  padding: 10% 5px;
+div.review {
+  margin-bottom: 20%;
 }
 
+.reviews {
+  background: #202120 url('../images/empty.png') no-repeat fixed;
+  max-height: 100%;
+  display: inline-block;
+  padding: 10% 5px;
+  text-align: center;
+}
+.reviews h5 {
+  margin-bottom: 0;
+}
+
+.reviews h4{
+  text-align: left;
+  border-bottom: #1397B8 1.5px solid;
+  width: 131%;
+  margin-top: 0;
+  margin-left: 20%;
+}
+
+.column-3 h5 {
+  margin-bottom: 0;
+  margin-left: 20%;
+}
 
 /*FOOTER*/
 .footer{
-width: 90%;
+margin-bottom: 100px;
+margin-top: 30px;
+text-align: center;
+}
+
+.footer p{
+  display: inline;
+  margin: 10px;
 }
 
 .search-bar, .button{
@@ -248,7 +329,7 @@ width: 90%;
   width: 20%;
   color: #1397B8;
   font-family: 'Futura';
-  margin: auto;
+  margin: 5px;
   display: inline;
   bottom: 25px;
 }
@@ -261,17 +342,113 @@ width: 90%;
   text-align: center;
 }
 
+.button:hover{
+  background: white;
+  border: 3px solid white;
+}
 
+@media (max-width:546px){
+  .footer p{
+    display: block;
+  }
+  .search-bar, .button{
+    margin: 0;
+  }
+}
 
+/*MEdia queries*/
+@media (max-width:723px){
+  .text{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .synopsis p{
+    width: 100%;
+  }
+  .synopsis h4{
+    width: 65%;
+    margin: 35px 0;
+    margin-left: 40%;
+  }
+  .reviews h4 {
+    width: 81%;
+}
+  .synopsis img{
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  #blu1{
+    width: 100vh;
+    height: 40%;
+  }
+}
 
+@media (min-width:1333px) {
+  .column-3{
+    width: 36%;
+  }
+  .reviews h4{
+    width: 124%;
+  }
+}
 
+@media (min-width: 724px) and (max-width:1180px){
+  .synopsis h4{
+    margin-bottom: 10%;
+    width: 133%;
+  }
+  .text{
+    width: 30%;
+  }
+  .column-3{
+    width: 33%;
+  }
+}
 
+@media (min-width: 724px) and (max-width: 965px) {
+  .reviews h4{
+    width: 85%;
+  }
+}
 
+@media (max-width: 965px) {
+  .column-3{
+    width: 100%;
+  }
+  .column-1, .column-2 {
+    float: left;
+    width: 44%;
+    margin: 3%;
+}
+  div.review{
+    margin-bottom: 0;
+  }
 
+}
 
+@media (min-width:1012px){
+  #blu4{
+    display: none;
+  }
+}
+@media (min-width:758px){
+   #blu5{
+    display: none;
+  }
+}
+@media (min-width:504px){
+    #blu6, #blu7, #blu8{
+    display: none;
+  }
+}
+@media (min-width: 724px)and(max-width:854px) {
+  #blu1{
+    /*height: 50%;
+    top: 25%;*/
+    left: 0;
+    width: 58%;
+  }
 
-
-
-
-
-
+}
