@@ -91,6 +91,7 @@ ul.rave {
 @media screen and (max-device-width: 1024px){
   .hero {
     background: #202120 url('../images/action.jpg') center no-repeat scroll;
+    background-size: cover;
     height: initial;
   }
   .hero img {
