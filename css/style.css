@@ -90,8 +90,12 @@ ul.rave {
 
 @media screen and (max-device-width: 1024px){
   .hero {
-    background: #202120 url('../images/action.jpg') no-repeat scroll;
-}
+    background: #202120 url('../images/action.jpg') center no-repeat scroll;
+    height: initial;
+  }
+  .hero img {
+    padding-bottom: 15%;
+  }
 }
 
 .hero p {
@@ -309,6 +313,7 @@ div.review {
 @media screen and (max-device-width: 1024px){
   .reviews {
     background: #202120 url('../images/empty.png') no-repeat scroll;
+    padding: 0;
 }
 }
 
@@ -331,7 +336,7 @@ div.review {
 
 /*FOOTER*/
 .footer{
-margin-bottom: 100px;
+padding-bottom: 100px;
 margin-top: 30px;
 text-align: center;
 }
