@@ -88,12 +88,11 @@ ul.rave {
   z-index: -1;
 }
 
-/*@media all {
+@media screen and (max-device-width: 1024px){
   .hero {
-    background: #202120 url('../images/action.jpg') no-repeat;
-    background-size: contain;
-  }
-}*/
+    background: #202120 url('../images/action.jpg') no-repeat scroll;
+}
+}
 
 .hero p {
   display: inline;
@@ -306,6 +305,13 @@ div.review {
   padding: 10% 5px;
   text-align: center;
 }
+
+@media screen and (max-device-width: 1024px){
+  .reviews {
+    background: #202120 url('../images/empty.png') no-repeat scroll;
+}
+}
+
 .reviews h5 {
   margin-bottom: 0;
 }
